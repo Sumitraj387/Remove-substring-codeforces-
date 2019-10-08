@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define int long int
+#define int long long int
 #define IOS ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-#define pb push_back
-#define pop pop_back
+#define pussy push_back
+#define poppy pop_back
 #define str string
 #define endl "\n"
 #define rtn return(0)
