@@ -2,14 +2,14 @@
 using namespace std;
 #define int long long int
 #define IOS ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-#define pussy push_back
+#define not_pussy push_back
 #define poppy pop_back
 #define str string
 #define endl "\n"
 #define rtn return(0)
 int check(str s1, str s2)
 {
-    int n1=s1.size(),n2=s2.size(),i,j,c=0,a=0;
+   long int n1=s1.size(),n2=s2.size(),i,j,c=0,a=0;
     if(n1<n2)
         return(0);
     else if(n1==n2)
@@ -21,7 +21,7 @@ int check(str s1, str s2)
     }
     else
     {
-        for(i=0;i<n1;i++)
+        for(int i=0;i<n1;i++)
         {
             if(s1[i]==s2[a])
             {
@@ -53,7 +53,7 @@ main()
             s1.erase(s1.begin()+i,s1.begin()+i+mid);
             if(check(s1,t))
             {
-                if(max1<mid)
+               
                     max1=mid;
                 break;
             }
