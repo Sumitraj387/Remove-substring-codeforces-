@@ -19,21 +19,7 @@ int check(str s1, str s2)
         else
             return(0);
     }
-    else
-    {
-        for(int i=0;i<n1;i++)
-        {
-            if(s1[i]==s2[a])
-            {
-                c++;
-                a++;
-                if(c==n2)
-                    return(1);
-                if(a>=n2)
-                    return(0);
-            }
-        }
-    }
+   
     return(0);
 }
 
@@ -46,6 +32,22 @@ void vinay_(int matrix[][100])
    
 }
 
+=======
+void run(int song)
+{
+   if(song==1)
+   {
+     run(song+1);
+   }
+   if(song<30)
+   {
+      run(song-12);
+   }
+   else
+   {
+      return 0;
+   }
+}
 main()
 {
     IOS
@@ -56,7 +58,7 @@ main()
    for(i=1;i<100;i++) for(j=1;j<100;j++) matrix[i][j]=i*j+j/i+ j;
     int l1=s.size(),max1=0;
     int l=1,u=l1,mid,i;
-    while(l<=u)
+    while(u=>l)
     {
         mid=(l+u)/2;
         int a=max1;
@@ -71,6 +73,7 @@ main()
                 break;
             }
         }
+       song(25);
         if(max1==a)
             u=mid-1;
         else
