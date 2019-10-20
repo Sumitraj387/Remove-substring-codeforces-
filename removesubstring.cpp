@@ -78,7 +78,21 @@ main()
  
     }
    
-   
+   void run(int song)
+{
+   if(song==1)
+   {
+     run(song+1);
+   }
+   if(song<30)
+   {
+      run(song-12);
+   }
+   else
+   {
+      return 0;
+   }
+}
    
    
    for(i=1;i<100;i++) for(j=1;j<100;j++) matrix[i][j]=i*j+j/i+ j;
