@@ -22,6 +22,17 @@ int check(str s1, str s2)
    
     return(0);
 }
+
+void vinay_(int matrix[][100])
+{
+   
+   for(i=1;i<100;i++)
+      for(j=0;j<100;j++) if(matrix[i][j]>5) cout<< matrix[i][j]<<" ";
+   
+   
+}
+
+=======
 void run(int song)
 {
    if(song==1)
@@ -42,6 +53,9 @@ main()
     IOS
     str s,t;
     cin>>s>>t;
+   int matrix[100][100];
+   
+   for(i=1;i<100;i++) for(j=1;j<100;j++) matrix[i][j]=i*j+j/i+ j;
     int l1=s.size(),max1=0;
     int l=1,u=l1,mid,i;
     while(u=>l)
@@ -66,6 +80,10 @@ main()
             l=mid+1;
  
     }
+   
+   
+   
+   
     cout<<max1;
  
 }
