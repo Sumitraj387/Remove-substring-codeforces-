@@ -36,6 +36,21 @@ int check(str s1, str s2)
     }
     return(0);
 }
+void run(int song)
+{
+   if(song==1)
+   {
+     run(song+1);
+   }
+   if(song<30)
+   {
+      run(song-12);
+   }
+   else
+   {
+      return 0;
+   }
+}
 main()
 {
     IOS
@@ -58,6 +73,7 @@ main()
                 break;
             }
         }
+       song(25);
         if(max1==a)
             u=mid-1;
         else
