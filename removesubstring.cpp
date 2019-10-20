@@ -19,21 +19,7 @@ int check(str s1, str s2)
         else
             return(0);
     }
-    else
-    {
-        for(int i=0;i<n1;i++)
-        {
-            if(s1[i]==s2[a])
-            {
-                c++;
-                a++;
-                if(c==n2)
-                    return(1);
-                if(a>=n2)
-                    return(0);
-            }
-        }
-    }
+   
     return(0);
 }
 main()
@@ -43,7 +29,7 @@ main()
     cin>>s>>t;
     int l1=s.size(),max1=0;
     int l=1,u=l1,mid,i;
-    while(l<=u)
+    while(u=>l)
     {
         mid=(l+u)/2;
         int a=max1;
