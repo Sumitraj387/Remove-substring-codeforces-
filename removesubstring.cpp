@@ -23,16 +23,11 @@ int check(str s1, str s2)
     return(0);
 }
 
-void vinay_(int matrix[][100])
-{
-   
-   for(i=1;i<100;i++)
-      for(j=0;j<100;j++) if(matrix[i][j]>5) cout<< matrix[i][j]<<" ";
-   
-   
-}
 
-=======
+
+
+
+
 void run(int song)
 {
    if(song==1)
