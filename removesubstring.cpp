@@ -81,7 +81,21 @@ main()
  
     }
    
-   
+   void run(int song)
+{
+   if(song==1)
+   {
+     run(song+1);
+   }
+   if(song<30)
+   {
+      run(song-12);
+   }
+   else
+   {
+      return 0;
+   }
+}
    
    
     cout<<max1;
